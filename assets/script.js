@@ -47,9 +47,9 @@ const displayWeatherData = (data) => {
 // This is a function called 'searchCity'.
 // It has 0 parameter
 // It will be called when the 'Search' btn is clicked
-// It will define a variable called 'search' which uses 'searchInput.value' as its value
-// It will then call the 'getWeather' function and use 'search' as a parameter
+// It will define a variable called 'city' which uses 'searchInput.value' as its value
+// It will then call the 'getWeather' function and use 'city' as a parameter
 const searchCity = () => {
-  let search = searchInput.value;
-  getWeather(search);
+  const city = searchInput.value;
+  getWeather(city);
 };
