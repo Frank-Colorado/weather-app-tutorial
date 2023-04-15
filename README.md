@@ -22,7 +22,9 @@ In order to use this web aplication, use the search function to enter the name o
 
 ## Credits
 
-https://www.youtube.com/watch?v=lI1ae4REbFM&t=30676s : This youtube tutorial was used to create this wep app.
+https://www.youtube.com/watch?v=lI1ae4REbFM&t=30676s : This youtube tutorial was used to create this web app.
+
+https://rapidapi.com/worldapi/api/open-weather13/details : This weather API was found on RapidAPI and used to create this web app. 
 
 ## License
 
