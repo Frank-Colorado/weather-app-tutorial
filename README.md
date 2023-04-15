@@ -6,11 +6,11 @@ This web application is a Weather App which was created using a tutorial in orde
 
 ## Visuals
 
-
+![image](https://user-images.githubusercontent.com/123683792/232174342-c2759de9-909f-49c2-8f51-02b22681fbe6.png)
 
 ## Website URL
 
-
+https://frank-colorado.github.io/weather-app-tutorial/
 
 ## Installation
 

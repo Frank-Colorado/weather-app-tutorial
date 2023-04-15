@@ -18,7 +18,7 @@ const options = {
 
 // This is a function called 'getWeather'.
 // It has 1 parameter called 'city'
-// This function will fetch data from the 'Open Weather' API and pass the parameter city into the URL
+// This function will fetch data from the 'Open Weather' API and pass the parameter 'city' into the URL
 // The response recieved will then be converted into json data.
 // A variable called 'weather' will then use the json data as its value. 
 // The 'displayWeatherData' function will then be called using the variable 'weather' as a parameter 
