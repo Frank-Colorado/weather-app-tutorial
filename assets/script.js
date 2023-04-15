@@ -2,6 +2,11 @@
 // Need: data.temp, data.temp_min, data.temp_max, data.weather[0].main
 
 const searchInput = document.getElementById("city-input");
+const city = document.getElementById('city-name')
+const weatherType = document.getElementById('weather-type')
+const temp = document.getElementById('temp')
+const tempMin = document.getElementById('min-temp')
+const tempMax = document.getElementById('max-temp')
 
 const options = {
   method: "GET",
@@ -17,15 +22,14 @@ const getWeather = (city) => {
   fetch(`https://open-weather13.p.rapidapi.com/city/${city}`, options)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       const weather = data;
       displayWeatherData(weather);
     })
     .catch((err) => console.error(err));
 };
 
-const displayWeatherData = (weatherData) => {
-  // this function will display weather data on the DOM
+const displayWeatherData = (data) => {
+    console.log(data)
 };
 
 // This is a function called searchCity.
@@ -35,5 +39,5 @@ const displayWeatherData = (weatherData) => {
 // It will then call the 'getWeather' function and use 'search' as a parameter
 const searchCity = () => {
   let search = searchInput.value;
-  getWeather(search.toLowerCase());
+  getWeather(search);
 };
