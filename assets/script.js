@@ -16,8 +16,12 @@ const options = {
   },
 };
 
-// This is a function called getWeather.
+// This is a function called 'getWeather'.
 // It has 1 parameter called 'city'
+// This function will fetch data from the 'Open Weather' API and pass the parameter city into the URL
+// The response recieved will then be converted into json data.
+// A variable called 'weather' will then use the json data as its value. 
+// The 'displayWeatherData' function will then be called using the variable 'weather' as a parameter 
 const getWeather = (city) => {
   fetch(`https://open-weather13.p.rapidapi.com/city/${city}`, options)
     .then((response) => response.json())
@@ -28,11 +32,19 @@ const getWeather = (city) => {
     .catch((err) => console.error(err));
 };
 
+
+// This is a function called 'displayWeatherData'.
+// It has 1 parameter called 'data'
+// The function will go through and set multiple DOM elements inner text to different values of the parameter 'data'
 const displayWeatherData = (data) => {
-    console.log(data)
+    city.innerText = data.name
+    weatherType.innerText = data.weather[0].main
+    temp.innerText = data.main.temp
+    tempMin.innerText = data.main.temp_min
+    tempMax.innerText = data.main.temp_max
 };
 
-// This is a function called searchCity.
+// This is a function called 'searchCity'.
 // It has 0 parameter
 // It will be called when the 'Search' btn is clicked
 // It will define a variable called 'search' which uses 'searchInput.value' as its value
